@@ -5,10 +5,15 @@
 import csv
 import os
 
+# Add variables that declare a read and write path for the district.
+
+District_Read_Path = "election_results.csv"
+District_Write_Path = "election_analysis.txt"
+
 # Add a variable to load a file from a path.
-file_to_load = os.path.join("Resources", "election_results.csv")
+file_to_load = os.path.join("Resources", District_Read_Path)
 # Add a variable to save the file to a path.
-file_to_save = os.path.join("analysis", "election_analysis.txt")
+file_to_save = os.path.join("analysis", District_Write_Path)
 
 # Initialize a total vote counter.
 total_votes = 0
